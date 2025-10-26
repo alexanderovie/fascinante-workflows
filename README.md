@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🚀 Fascinante Digital Workflow Engine
 
 > Advanced workflow automation platform for business process optimization and integration
@@ -159,3 +160,7 @@ Fascinante Digital specializes in advanced workflow automation and business proc
 ---
 
 **Built with ❤️ by Fascinante Digital**
+=======
+# fascinante-workflows
+Fascinante Digital Workflow Engine - Advanced workflow automation platform for business process optimization and integration
+>>>>>>> 39c7caa1bc8ba3c1a3f0ba8c35fdde87096e3bd0
