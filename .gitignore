@@ -1,0 +1,90 @@
+# ===========================================
+# GITIGNORE PARA N8N AUTOMATIZACIONES
+# ===========================================
+
+# Archivos de configuración sensibles
+.env.generated
+.env.local
+.env.production
+
+# Backups (contienen datos sensibles)
+backups/
+*.tar.gz
+*.dump
+
+# Logs
+*.log
+logs/
+
+# Archivos temporales
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
+
+# Directorios de datos de Docker
+docker-data/
+postgres-data/
+
+# Archivos de credenciales (contienen información sensible)
+credentials/*.json
+!credentials/README.md
+
+# Archivos locales que pueden contener datos sensibles
+local-files/data/
+local-files/secrets/
+local-files/*.key
+local-files/*.pem
+local-files/*.p12
+
+# Archivos de configuración específicos del sistema
+docker-compose.override.yml
+docker-compose.local.yml
+
+# Archivos de IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Archivos de sistema
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Archivos de Node.js (si se instalan dependencias locales)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Archivos de Python (si se usan scripts Python)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Archivos de certificados SSL
+*.crt
+*.key
+*.pem
+*.p12
+*.pfx
+ssl/
+certs/
+
+# Archivos de configuración de base de datos
+*.sql.backup
+*.sql.old
+pg_hba.conf.backup
+postgresql.conf.backup
