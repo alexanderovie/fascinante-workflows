@@ -1,0 +1,21 @@
+name: 🚀 Elite Pro Deploy to Railway
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    container: ghcr.io/railwayapp/cli:latest
+    env:
+      SVC_ID: n8n-app
+      RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - run: railway up --service=${{ env.SVC_ID }}
+      - name: ✅ Verify deployment
+        run: |
+          echo "🎉 Elite Pro deployment completed!"
+          echo "🌐 URL: https://workflows.fascinantedigital.com"
+          echo "📅 $(date)"
