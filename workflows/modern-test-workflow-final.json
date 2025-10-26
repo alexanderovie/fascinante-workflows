@@ -1,0 +1,41 @@
+{
+  "name": "🧪 Modern API Test - Fascinante Digital",
+  "nodes": [
+    {
+      "parameters": {},
+      "name": "Start",
+      "type": "n8n-nodes-base.start",
+      "typeVersion": 1,
+      "id": "start-node",
+      "position": [240, 300]
+    },
+    {
+      "parameters": {
+        "message": "✅ Modern API Test ejecutado exitosamente",
+        "options": {
+          "includeTimestamp": true
+        }
+      },
+      "id": "log-test",
+      "name": "Log API Test",
+      "type": "n8n-nodes-base.log",
+      "typeVersion": 1,
+      "position": [460, 300]
+    }
+  ],
+  "connections": {
+    "Start": {
+      "main": [
+        [
+          {
+            "node": "log-test",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {},
+  "staticData": null
+}
